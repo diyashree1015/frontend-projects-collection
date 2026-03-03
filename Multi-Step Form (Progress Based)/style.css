@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #042453;
+}
+
+.form-container {
+  background: #fff;
+  width: 360px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background: #4f46e5;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#prevBtn {
+  background: #042453;
+  color: white;
+}
+
+#nextBtn {
+  background: #042453;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
