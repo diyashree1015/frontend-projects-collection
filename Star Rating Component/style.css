@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #042453;
+}
+
+.rating-container {
+  background: #ffffff;
+  padding: 30px;
+  width: 320px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.stars {
+  font-size: 32px;
+}
+
+.star {
+  cursor: pointer;
+  color: #d1d5db;
+  transition: color 0.2s;
+}
+
+.star.active {
+  color: #facc15;
+}
+
+.result {
+  margin-top: 15px;
+  font-size: 14px;
+}
