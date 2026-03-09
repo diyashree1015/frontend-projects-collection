@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coupon Code Validator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="coupon-container">
+    <h2>Apply Coupon</h2>
+
+    <div class="price">
+      Original Price: ₹<span id="originalPrice">1000</span>
+    </div>
+
+<p class="available">
+  Available Coupons: <strong>SAVE10</strong>, <strong>SAVE20</strong>, <strong>DISCOUNT50</strong>
+</p>
+
+    <input
+      type="text"
+      id="couponInput"
+      placeholder="Enter coupon code"
+    />
+
+    <button onclick="applyCoupon()">Apply Coupon</button>
+
+    <p class="message" id="message"></p>
+
+    <div class="final-price">
+      Final Price: ₹<span id="finalPrice">1000</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
