@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auto-Save Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Auto-Save Form</h2>
+
+    <p class="desc">
+      Your data is saved automatically to prevent loss if you refresh or leave the page.
+    </p>
+
+    <input type="text" id="name" placeholder="Your Name" />
+    <input type="email" id="email" placeholder="Your Email" />
+    <textarea id="message" placeholder="Your Message"></textarea>
+
+    <p class="status" id="status">Saved ✔</p>
+
+    <button onclick="clearForm()">Clear Form</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
