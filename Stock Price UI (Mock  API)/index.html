@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stock Price UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="stock-container">
+    <h2>Stock Price Tracker</h2>
+
+    <select id="stockSelect">
+      <option value="AAPL">Apple (AAPL)</option>
+      <option value="GOOGL">Google (GOOGL)</option>
+      <option value="AMZN">Amazon (AMZN)</option>
+      <option value="MSFT">Microsoft (MSFT)</option>
+      <option value="TSLA">Tesla (TSLA)</option>
+    </select>
+
+    <button onclick="getStock()">Get Price</button>
+
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
