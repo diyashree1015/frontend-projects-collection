@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crypto Price Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="crypto-container">
+    <h2>Crypto Price Tracker</h2>
+
+    <select id="cryptoSelect">
+      <option value="bitcoin">Bitcoin</option>
+      <option value="ethereum">Ethereum</option>
+      <option value="tether">Tether</option>
+      <option value="binancecoin">Binance Coin</option>
+      <option value="ripple">Ripple</option>
+    </select>
+
+    <button onclick="getPrice()">Get Price</button>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
