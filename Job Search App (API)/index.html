@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Search App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="job-container">
+    <h2>Job Search</h2>
+
+    <div class="search-box">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search jobs (e.g. frontend, react)"
+      />
+      <button onclick="getJobs()">Search</button>
+    </div>
+
+    <div id="jobList" class="job-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
